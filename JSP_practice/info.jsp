@@ -116,7 +116,7 @@
          
         
          <%
-         String hb = rs.getString("mem_hobby");  //DBdml hobby데이터를 문자열로 hb에 저장, 아래 contains 함수로 확인 후 checked 표시 
+         String hb = rs.getString("mem_hobby");  //DB의 hobby데이터를 문자열로 hb에 저장, 아래 contains 함수로 확인 후 checked 표시 
          %>
         <p>취미 : 
         <label>드라이브<input type="checkbox" name="hobby" value="드라이브" <%if(hb.contains("드라이브"))%>checked="checked"></label> 
