@@ -129,8 +129,9 @@
 		if(b_userid.equals((String)session.getAttribute("userid"))){
 		
 %>
-		<input type="button" value="삭제" onclick="location.href='reply_del.jsp?re_idx=<%=arr.getReidx()%>'">
-		
+	
+		<input type="button" value="삭제" onclick="location.href='reply_del.jsp?re_idx=<%=arr.getReidx()%>&b_idx=<%=b_idx%>'">
+		                                                                 //대글 삭제 후 같은 게시물로 화면 전환을위해 b_idx 데이터 전달
 <%
 	
 	}
