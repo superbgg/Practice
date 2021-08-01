@@ -36,7 +36,7 @@
 	
 	
 	//====페이지 갯수 pageNum========
-	String pageNum = request.getParameter("pageNum"); //???pageNum 무슨 변수???
+	String pageNum = request.getParameter("pageNum"); 
 	if(pageNum != null && !pageNum.equals("")){
 		start = (Integer.parseInt(pageNum)-1) * pagePerCount;
 	}else{
